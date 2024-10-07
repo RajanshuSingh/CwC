@@ -47,3 +47,8 @@ myCoding.forEach( (item,index,arr)=>{
                                   // this is how we can access inside the object
     
     })
+
+
+
+
+    
