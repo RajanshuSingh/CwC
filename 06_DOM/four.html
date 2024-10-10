@@ -38,6 +38,20 @@
         }
 
         addOptimiseLanguage("goLANG")
+
+        //EDIT THE VALUES
+        const secondLang=document.querySelector("li:nth-child(2)");
+       const newLi=  document.createElement('li');
+       newLi.textContent="MOJO";
+       secondLang.replaceWith(newLi)
+
+       //REMOVE 
+
+       const lastLang= document.querySelector('li:last-child')
+
+       lastLang.remove()
+       
+
     </script>
 
     </html>
