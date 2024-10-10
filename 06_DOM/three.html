@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learning DOM| Rajanshu Singh</title>
+</head>
+<body style="background-color: rgb(0, 0, 0); color:white">
+
+</body>
+<script>
+  const div=   document.createElement('div');
+  console.log(div);
+  div.className="Main";
+  div.id=Math.round(Math.random()*10+1);
+  div.setAttribute("title","Rajanshu Singh");
+  div.style.backgroundColor="Green";
+  div.style.color="white";
+  div.style.padding="10px"
+//   div.innerText="Chai aur Code"
+
+
+
+  //ye div memory k andar hai abhi 
+  //isko screen pe laane k liye
+  //attach krna hoga
+
+  const addText= document.createTextNode("Chai aur Code")
+  div.appendChild(addText)
+
+
+  //attach aise kro (neeeche jaise kia h)
+
+  document.body.appendChild(div);
+
+
+
+
+
+
+  
+</script>
+</html>
+

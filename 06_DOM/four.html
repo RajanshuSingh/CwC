@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learning DOM</title>
+</head>
+
+<style>
+    .bg-black{
+        
+        color:beige;
+        text-decoration: dashed;
+        text-decoration: wavy;
+        background-color:  black;
+
+    }
+
+</style>
+<body class="bg-black">
+    <ul class="language">
+       <li>JAVASCRIPT</li>
+    </ul>
+    </body>
+    <script>
+        function addLanguage(langName){
+          const li=  document.createElement('li');
+          li.innerHTML=`${langName}`
+          document.querySelector('.language').appendChild(li) //this is how we attach
+        }
+
+        addLanguage("PYTHON")
+        addLanguage("TYPESCRIPT")
+
+        function addOptimiseLanguage(langName){
+            const li= document.createElement('li');
+            li.appendChild(document.createTextNode(langName));
+            document.querySelector('.language').appendChild(li)//this is how we attach
+        }
+
+        addOptimiseLanguage("goLANG")
+    </script>
+
+    </html>
